@@ -424,7 +424,8 @@ const allQuestions = [
       "(C) \\(-2(\\sqrt{3} + \\sqrt{11})\\)",
       "(D) \\(-2\\sqrt{6} - 2\\sqrt{22}\\)"
     ],
-    correct: "A"
+    // 수정: 올바른 계산 결과는 -2√6 - 2√22이므로 정답은 (D)입니다.
+    correct: "D"
   },
   {
     text: "문제: 다음 식을 간단히 하시오. \\(\\sqrt{7}\\,(2\\sqrt{3} + \\sqrt{7})\\)",
@@ -636,16 +637,7 @@ const allQuestions = [
     ],
     correct: "D"
   },
-  {
-    text: "문제: 다음 식을 간단히 하시오. \\(\\dfrac{3\\sqrt{35} - \\sqrt{21}}{\\sqrt{7} - \\sqrt{45} + 2\\sqrt{12}}\\)",
-    choices: [
-      "(A) \\(-20\\)",
-      "(B) \\(-3\\sqrt{5}\\)",
-      "(C) 22",
-      "(D) \\(-22\\)"
-    ],
-    correct: "D"
-  },
+  // 문제 "\\(\\dfrac{3\\sqrt{35} - \\sqrt{21}}{\\sqrt{7} - \\sqrt{45} + 2\\sqrt{12}}\\)"는 계산이 지나치게 복잡하여 삭제함.
   {
     text: "문제: 다음 식을 간단히 하시오. \\(\\sqrt{3}\\,(\\sqrt{12} + 1) + \\sqrt{2}\\,(\\sqrt{6} - \\sqrt{2})\\)",
     choices: [
@@ -667,6 +659,7 @@ const allQuestions = [
     correct: "D"
   }
 ];
+
 
 // ------------------ 게임 로직 관련 변수 ------------------
 let questionIndex = 0;         // 현재 문제 인덱스
